@@ -102,7 +102,7 @@ class User
       SQL
       return nil unless user.length > 0
       
-      User.new(user.first).fname
+      User.new(user.first).name
     end
     
     def initialize(options)
@@ -110,7 +110,11 @@ class User
       @fname = options['fname']
       @lname = options['lname']
     end
-    
+
+    def name
+      self.lname + " " + self.fname
+    end
+
     def fname(user_id)
       raise "#{self} not in database" unless self.id
       user = QuestionsDatabase.instance.execute(<<-SQL, user_id)
