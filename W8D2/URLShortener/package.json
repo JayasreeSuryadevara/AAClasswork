@@ -1,0 +1,11 @@
+{
+  "name": "URLShortener",
+  "private": true,
+  "dependencies": {
+    "@rails/ujs": "^5.2.4",
+    "turbolinks": "^5.2.0",
+    "@rails/activestorage": "^5.2.4",
+    "@rails/actioncable": "^5.2.4"
+  },
+  "version": "0.1.0"
+}
