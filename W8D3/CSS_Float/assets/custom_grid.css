@@ -1,1 +1,26 @@
-/* PUT FLUID GRID CODE HERE */
+.col{
+    box-sizing: border-box;
+    float: left;
+}
+
+.col1-2{
+    
+    width: 20%;
+    padding-right: 0;
+
+}
+.col2-2{
+    /* float: right; */
+    width: 70%; 
+}
+
+.main_recipe{
+    content: "";
+    display: block;
+    clear: both;
+}
+.cf{
+    content: "";
+    display: block;
+    clear: both;
+}
