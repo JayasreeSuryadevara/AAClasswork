@@ -174,7 +174,6 @@ describe SQLObject do
     describe '::find' do
       it 'fetches single objects by id' do
         c = Cat.find(1)
-
         expect(c).to be_instance_of(Cat)
         expect(c.id).to eq(1)
       end
