@@ -10,7 +10,7 @@ class ArtworksController < ApplicationController
         if art.save
             render json: art
         else
-             render json: art.errors.full_messages, status: 422
+            render json: art.errors.full_messages, status: 422
         end
     end
 
