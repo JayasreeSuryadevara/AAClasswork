@@ -1,5 +1,10 @@
 class Album < ApplicationRecord
     validates :title, :year, :band_id, presence: true
-    validates :year, numericality: { :greater_than 1900 :less_than 3000 }
+    validates :year, numericality: { minimum: 1900, maximum: 3000 }
     validates :live, inclusion: { in: [true, false] }
+
+    belongs_to :band,
+        primary_key: :id,
+        foreign_key: :band_id,
+        class_name: :Band
 end

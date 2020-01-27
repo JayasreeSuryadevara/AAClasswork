@@ -6,10 +6,10 @@ class UsersController < ApplicationController
     end
 
     def create
-        user = User.new(user_params)
+        @user = User.new(user_params)
 
-        if user.save
-            # redirect_to music_url
+        if @user.save
+            redirect_to bands_url
         else
             flash.now[:errors] = "Email address already exists!"
             render :new
@@ -18,7 +18,9 @@ class UsersController < ApplicationController
     end
 
     def destroy
-
+        @user = User.find(params[:id])
+        @user.destroy!
+        redirect_to bands_url
     end
 
     private
