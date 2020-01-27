@@ -20,8 +20,8 @@
     <form action="<%= band_url(@band) %>" method="POST">
       <input type="hidden" name="_method" value="DELETE">
       <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" >
-      <input type="submit" value="Destroy Band">
+      <input type="submit" value="Delete Band">
     </form>
   </li>
-  <li><a class='button' href="<%= bands_url %>">All bands</a></li>
+  <li><a class='button' href="<%= bands_url %>">Return</a></li>
 </ul>

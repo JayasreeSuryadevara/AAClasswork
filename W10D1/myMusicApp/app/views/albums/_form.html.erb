@@ -10,18 +10,17 @@
     value="<%= form_authenticity_token %>">
 
   <p>
-    <label for='album-name'>Album Name</label>
-    <input id='album-name' type="text" name="album[name]" value="<%= album.name %>">
+    <label for='album-title'>Album Name</label>
+    <input id='album-title' type="text" name="album[title]" value="<%= album.title %>">
   </p>
 
   <p>
     <label for='album-band'>Band</label>
     <select id='album-band' name="album[band_id]">
         <% Band.all.each do |band| %>
-            <option
+            <option 
                 <%= "selected" if album.band_id == band.id %>
-                value="<%= band.id %>">
-                <%= band.name %>
+                value="<%= band.id %>" <%= band.name %>
             </option>
         <% end %>
     </select>

@@ -3249,3 +3249,1185 @@ Migrating to CreateTracks (20200127223401)
   ↳ bin/rails:9
   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
   ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeTracksTypetoBoolean (20200127230119)
+  [1m[35m (8.1ms)[0m  [1m[35mALTER TABLE "tracks" DROP COLUMN "track_type"[0m
+  ↳ db/migrate/20200127230119_change_tracks_typeto_boolean.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeTracksTypetoBoolean (20200127230119)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.8ms)[0m  [1m[35mALTER TABLE "tracks" DROP COLUMN "track_type"[0m
+  ↳ db/migrate/20200127230119_change_tracks_typeto_boolean.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to ChangeTracksTypetoBoolean (20200127230119)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "tracks" DROP COLUMN "track_type"[0m
+  ↳ db/migrate/20200127230119_change_tracks_typeto_boolean.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (107.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myMusicApp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (163.4ms)[0m  [1m[35mCREATE DATABASE "myMusicApp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "albums" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (13.2ms)[0m  [1m[35mCREATE TABLE "albums" ("id" bigserial primary key, "band_id" integer NOT NULL, "title" character varying NOT NULL, "year" integer NOT NULL, "live" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_albums_on_band_id" ON "albums"  ("band_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "bands" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "bands" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "tracks" CASCADE[0m
+  ↳ db/schema.rb:34
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "album_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "lyrics" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_tracks_on_album_id" ON "tracks"  ("album_id")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (3.8ms)[0m  [1m[35mCREATE  INDEX  "index_tracks_on_id" ON "tracks"  ("id")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (8.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200127223401)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200127203519),
+(20200127211200),
+(20200127172618);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-27 23:09:43.715934"], ["updated_at", "2020-01-27 23:09:43.715934"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.5ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-01-27 23:09:43.723046"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (55.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myMusicApp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (130.4ms)[0m  [1m[35mCREATE DATABASE "myMusicApp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.5ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "albums" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (12.0ms)[0m  [1m[35mCREATE TABLE "albums" ("id" bigserial primary key, "band_id" integer NOT NULL, "title" character varying NOT NULL, "year" integer NOT NULL, "live" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_albums_on_band_id" ON "albums"  ("band_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "bands" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE TABLE "bands" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "tracks" CASCADE[0m
+  ↳ db/schema.rb:34
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "album_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "lyrics" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_tracks_on_album_id" ON "tracks"  ("album_id")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (3.3ms)[0m  [1m[35mCREATE  INDEX  "index_tracks_on_id" ON "tracks"  ("id")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:45
+  [1m[35m (8.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:45
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:45
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200127223401)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200127203519),
+(20200127211200),
+(20200127172618);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-27 23:11:51.152217"], ["updated_at", "2020-01-27 23:11:51.152217"]]
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-01-27 23:11:51.157742"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (138.7ms)[0m  [1m[35mCREATE DATABASE "myMusicApp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (184.0ms)[0m  [1m[35mCREATE DATABASE "myMusicApp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+Started GET "/bands" for ::1 at 2020-01-27 15:13:41 -0800
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/bands" for ::1 at 2020-01-27 15:13:54 -0800
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.2.4.1) lib/active_record/migration.rb:579:in `check_pending!'
+activerecord (5.2.4.1) lib/active_record/migration.rb:556:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20200127172618)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (15.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200127172618_create_users.rb:3
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/migrate/20200127172618_create_users.rb:10
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200127172618_create_users.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200127172618"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateBands (20200127203519)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (12.8ms)[0m  [1m[35mCREATE TABLE "bands" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200127203519_create_bands.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200127203519"]]
+  ↳ bin/rails:9
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateAlbums (20200127211200)
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.5ms)[0m  [1m[35mCREATE TABLE "albums" ("id" bigserial primary key, "band_id" integer NOT NULL, "title" character varying NOT NULL, "year" integer NOT NULL, "live" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200127211200_create_albums.rb:3
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_albums_on_band_id" ON "albums"  ("band_id")[0m
+  ↳ db/migrate/20200127211200_create_albums.rb:11
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200127211200"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateTracks (20200127223401)
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "album_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "lyrics" text, "track_type" character varying DEFAULT 'regular' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200127223401_create_tracks.rb:3
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_tracks_on_album_id" ON "tracks"  ("album_id")[0m
+  ↳ db/migrate/20200127223401_create_tracks.rb:12
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE  INDEX  "index_tracks_on_id" ON "tracks"  ("id")[0m
+  ↳ db/migrate/20200127223401_create_tracks.rb:13
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200127223401"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-27 23:14:07.850878"], ["updated_at", "2020-01-27 23:14:07.850878"]]
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5793646701514526505)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (88.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "myMusicApp_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (170.6ms)[0m  [1m[35mCREATE DATABASE "myMusicApp_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "albums" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (18.1ms)[0m  [1m[35mCREATE TABLE "albums" ("id" bigserial primary key, "band_id" integer NOT NULL, "title" character varying NOT NULL, "year" integer NOT NULL, "live" boolean DEFAULT FALSE NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_albums_on_band_id" ON "albums"  ("band_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "bands" CASCADE[0m
+  ↳ db/schema.rb:28
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE "bands" ("id" bigserial primary key, "name" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:28
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "tracks" CASCADE[0m
+  ↳ db/schema.rb:34
+  [1m[35m (16.3ms)[0m  [1m[35mCREATE TABLE "tracks" ("id" bigserial primary key, "album_id" integer NOT NULL, "title" character varying NOT NULL, "ord" integer NOT NULL, "lyrics" text, "track_type" character varying DEFAULT 'regular' NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:34
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_tracks_on_album_id" ON "tracks"  ("album_id")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (4.2ms)[0m  [1m[35mCREATE  INDEX  "index_tracks_on_id" ON "tracks"  ("id")[0m
+  ↳ db/schema.rb:34
+  [1m[35m (1.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:46
+  [1m[35m (10.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:46
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:46
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:46
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200127223401)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200127203519),
+(20200127211200),
+(20200127172618);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-01-27 23:14:08.427732"], ["updated_at", "2020-01-27 23:14:08.427732"]]
+  ↳ db/schema.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-01-27 23:14:08.446614"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Started GET "/bands" for ::1 at 2020-01-27 15:14:30 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jayasreesuryadevara/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (2.1ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 646ms (Views: 577.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/bands/new" for ::1 at 2020-01-27 15:14:34 -0800
+Processing by BandsController#new as HTML
+  Rendering bands/new.html.erb within layouts/application
+  Rendered bands/_form.html.erb (1.1ms)
+  Rendered bands/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 102ms (Views: 70.0ms | ActiveRecord: 19.7ms)
+
+
+Started POST "/bands" for ::1 at 2020-01-27 15:14:39 -0800
+Processing by BandsController#create as HTML
+  Parameters: {"authenticity_token"=>"ZTxriZc4heTbIusa2SSjqh/W8qNX7iP8RQFwtMgdu080ewxmnvUYzQdl4Z5TtyA4lCn04xXh15hItZ+aZZpjlA==", "band"=>{"name"=>"Amazing Band"}}
+  [1m[35m (3.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bands_controller.rb:15
+  [1m[36mBand Create (14.3ms)[0m  [1m[32mINSERT INTO "bands" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Amazing Band"], ["created_at", "2020-01-27 23:14:39.558613"], ["updated_at", "2020-01-27 23:14:39.558613"]]
+  ↳ app/controllers/bands_controller.rb:15
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bands_controller.rb:15
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 35ms (ActiveRecord: 25.0ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:14:39 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (3.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (4.8ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (70.6ms)
+Completed 200 OK in 321ms (Views: 287.6ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:14:43 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (2.0ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+  Rendering albums/new.html.erb within layouts/application
+  Rendered albums/_form.html.erb (20.6ms)
+  Rendered albums/new.html.erb within layouts/application (25.2ms)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 10.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Album:0x00007fdcaae4a898>):
+    11: 
+    12:   <p>
+    13:     <label for='album-name'>Album Name</label>
+    14:     <input id='album-name' type="text" name="album[name]" value="<%= album.name %>">
+    15:   </p>
+    16: 
+    17:   <p>
+  
+app/views/albums/_form.html.erb:14:in `_app_views_albums__form_html_erb__1965396589189311240_70292901305520'
+app/views/albums/new.html.erb:3:in `_app_views_albums_new_html_erb__1202890483394834941_70292868270240'
+app/controllers/albums_controller.rb:11:in `new'
+Started GET "/bands/1" for ::1 at 2020-01-27 15:14:48 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (4.0ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 120ms (Views: 110.1ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/bands" for ::1 at 2020-01-27 15:14:54 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (4.3ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 110ms (Views: 104.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/bands/new" for ::1 at 2020-01-27 15:14:56 -0800
+Processing by BandsController#new as HTML
+  Rendering bands/new.html.erb within layouts/application
+  Rendered bands/_form.html.erb (4.1ms)
+  Rendered bands/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 94ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bands" for ::1 at 2020-01-27 15:14:59 -0800
+Processing by BandsController#create as HTML
+  Parameters: {"authenticity_token"=>"zrARCkgsetUOi1q59trxyzqiEIVSPDsRst35dLd0UwCf93blQeHn/NLMUD18SXJZsV0WxRAzz3W/aRZaGvOL2w==", "band"=>{"name"=>"Amazing Band 2"}}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bands_controller.rb:15
+  [1m[36mBand Create (0.9ms)[0m  [1m[32mINSERT INTO "bands" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Amazing Band 2"], ["created_at", "2020-01-27 23:15:00.006045"], ["updated_at", "2020-01-27 23:15:00.006045"]]
+  ↳ app/controllers/bands_controller.rb:15
+  [1m[35m (8.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bands_controller.rb:15
+Redirected to http://localhost:3000/bands/2
+Completed 302 Found in 16ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/bands/2" for ::1 at 2020-01-27 15:15:00 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBand Load (4.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (2.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 2]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 112ms (Views: 102.7ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/bands" for ::1 at 2020-01-27 15:15:03 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (0.5ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/bands/new" for ::1 at 2020-01-27 15:15:04 -0800
+Processing by BandsController#new as HTML
+  Rendering bands/new.html.erb within layouts/application
+  Rendered bands/_form.html.erb (1.0ms)
+  Rendered bands/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 116ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/bands" for ::1 at 2020-01-27 15:15:08 -0800
+Processing by BandsController#create as HTML
+  Parameters: {"authenticity_token"=>"uPcQ0P57W5ZuporsevwQZO0PGRw4bZ8IU+QdEU0ZgZjpsHc/97bGv7LhgGjwb5P2ZvAfXHpia2xeUPI/4J5ZQw==", "band"=>{"name"=>"Most Amazing Band"}}
+  [1m[35m (4.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/bands_controller.rb:15
+  [1m[36mBand Create (1.9ms)[0m  [1m[32mINSERT INTO "bands" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Most Amazing Band"], ["created_at", "2020-01-27 23:15:08.615354"], ["updated_at", "2020-01-27 23:15:08.615354"]]
+  ↳ app/controllers/bands_controller.rb:15
+  [1m[35m (8.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/bands_controller.rb:15
+Redirected to http://localhost:3000/bands/3
+Completed 302 Found in 23ms (ActiveRecord: 14.3ms)
+
+
+Started GET "/bands/3" for ::1 at 2020-01-27 15:15:08 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBand Load (8.6ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (1.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 3]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 138ms (Views: 123.4ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/bands" for ::1 at 2020-01-27 15:15:12 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (0.6ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:15:15 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (5.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (1.2ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 110ms (Views: 99.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:15:18 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (4.7ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+  Rendering albums/new.html.erb within layouts/application
+  Rendered albums/_form.html.erb (22.5ms)
+  Rendered albums/new.html.erb within layouts/application (31.5ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 4.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Album:0x00007fdcaad93800>):
+    11: 
+    12:   <p>
+    13:     <label for='album-name'>Album Name</label>
+    14:     <input id='album-name' type="text" name="album[name]" value="<%= album.name %>">
+    15:   </p>
+    16: 
+    17:   <p>
+  
+app/views/albums/_form.html.erb:14:in `_app_views_albums__form_html_erb__1965396589189311240_70292900856500'
+app/views/albums/new.html.erb:3:in `_app_views_albums_new_html_erb__1202890483394834941_70292867943880'
+app/controllers/albums_controller.rb:11:in `new'
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:16:50 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (1.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (7.9ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (16.4ms)
+  Rendered albums/new.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 157ms (Views: 144.4ms | ActiveRecord: 9.1ms)
+
+
+Started POST "/albums" for ::1 at 2020-01-27 15:17:15 -0800
+Processing by AlbumsController#create as HTML
+  Parameters: {"authenticity_token"=>"2XL1885NFiX6DRr9UNsV13M7eOvv4JmRfr10mQykrUGINZIcx4CLDCZKEHnaSJZF+MR+q63vbfVzCZu3oSN1mg==", "album"=>{"title"=>"Best Album", "band_id"=>"1", "live"=>"f", "year"=>"1999"}}
+Unpermitted parameter: :title
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[36mBand Load (0.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/albums_controller.rb:17
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (4.5ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (9.9ms)
+  Rendered albums/new.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 257ms (Views: 159.4ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/albums" for ::1 at 2020-01-27 15:17:23 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/albums"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/bands" for ::1 at 2020-01-27 15:19:28 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (2.0ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:19:33 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.9ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.9ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 105ms (Views: 100.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:20:07 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (2.5ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (1.8ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (4.9ms)
+  Rendered albums/new.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 114ms (Views: 106.5ms | ActiveRecord: 4.3ms)
+
+
+Started POST "/albums" for ::1 at 2020-01-27 15:20:16 -0800
+Processing by AlbumsController#create as HTML
+  Parameters: {"authenticity_token"=>"F/rzEQNfuAQlbnZq8KuP350kydmYCRgGLKtu+61D9b9GvZT+CpIlLfkpfO56OAxNFtvPmdoG7GIhH4HVAMQtZA==", "album"=>{"title"=>"Best Album", "band_id"=>"1", "live"=>"f", "year"=>"1999"}}
+Unpermitted parameter: :title
+  [1m[35m (5.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[36mBand Load (5.8ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/albums_controller.rb:17
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (0.4ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (3.0ms)
+  Rendered albums/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 164ms (Views: 139.1ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/albums" for ::1 at 2020-01-27 15:23:55 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/albums"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/albums" for ::1 at 2020-01-27 15:24:00 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/albums"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/albums" for ::1 at 2020-01-27 15:28:11 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/albums"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.1.1) lib/rack/method_override.rb:24:in `call'
+rack (2.1.1) lib/rack/runtime.rb:24:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.1.1) lib/rack/sendfile.rb:113:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/bands" for ::1 at 2020-01-27 15:28:36 -0800
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jayasreesuryadevara/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (0.9ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (43.9ms)
+Completed 200 OK in 330ms (Views: 300.8ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:28:39 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (4.8ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 136ms (Views: 110.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:29:53 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (6.8ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (2.9ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (36.7ms)
+Completed 200 OK in 284ms (Views: 271.3ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:30:52 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (4.6ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (0.4ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (3.7ms)
+  Rendered albums/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 149ms (Views: 89.2ms | ActiveRecord: 42.5ms)
+
+
+Started POST "/albums" for ::1 at 2020-01-27 15:31:06 -0800
+Processing by AlbumsController#create as HTML
+  Parameters: {"authenticity_token"=>"1MYK/mlwwnN0a2PqN3qwqtCCBNQSQBv7Ipaer/gHadKFgW0RYL1fWqgsaW696TM4W30ClFBP758vInGBVYCxCQ==", "album"=>{"title"=>"Best Album", "band_id"=>"1", "live"=>"f", "year"=>"1999"}}
+Unpermitted parameter: :title
+  [1m[35m (2.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[36mBand Load (5.2ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[35m (1.6ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/albums_controller.rb:17
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (1.0ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (7.4ms)
+  Rendered albums/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 178ms (Views: 126.6ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/bands" for ::1 at 2020-01-27 15:32:08 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (0.4ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 167ms (Views: 139.4ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:32:13 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (5.1ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (8.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (35.1ms)
+Completed 200 OK in 140ms (Views: 108.8ms | ActiveRecord: 22.6ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:32:17 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (4.8ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 21.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"albums", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/albums_controller.rb:11:in `new'
+Started GET "/bands/1" for ::1 at 2020-01-27 15:34:32 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 147ms (Views: 141.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:35:41 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (0.4ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 116ms (Views: 85.6ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:35:48 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (0.6ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 53ms (Views: 47.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:35:56 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (5.0ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 30ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:35:56 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (0.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:36:00 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (2.9ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:36:00 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.2ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 51ms (Views: 46.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:36:13 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (6.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 9ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:36:13 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (2.7ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (1.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 101ms (Views: 91.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/bands" for ::1 at 2020-01-27 15:36:35 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (0.6ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 178ms (Views: 176.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:36:38 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (7.6ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.4ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 166ms (Views: 151.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:36:40 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (0.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:36:40 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.8ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 146ms (Views: 140.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:39:42 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.0ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 138ms (Views: 134.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:40:37 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.8ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 72ms (Views: 63.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:40:46 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (6.6ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:40:46 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (0.4ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 43ms (Views: 40.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:43:17 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (6.7ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 78ms (Views: 68.7ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 15:43:20 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (4.6ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+Redirected to http://localhost:3000/bands/1
+Completed 302 Found in 7ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 15:43:20 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (3.9ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.3ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 41.1ms | ActiveRecord: 4.1ms)
+
+

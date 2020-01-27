@@ -5,8 +5,7 @@ class CreateTracks < ActiveRecord::Migration[5.2]
       t.string    :title, null: false
       t.integer   :ord, null: false
       t.text      :lyrics
-      t.string    :track_type, null: false, 
-                    inclusion: { in: ["regular","bonus"]}, default: "regular"
+      t.string    :track_type, null: false, inclusion: { in: ["regular","bonus"]}, default: "regular"
 
       t.timestamps
     end
