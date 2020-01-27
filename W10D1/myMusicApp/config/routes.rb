@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :albums
   resources :bands
   resources :users, only: [:create, :new, :show]
   resources :session, only: [:create, :destroy, :new]
