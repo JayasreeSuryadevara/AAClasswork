@@ -1,0 +1,28 @@
+<html>
+<head>
+    <h1>Create a new User!</h1>
+</head>
+<div>
+    <img src="/speakers.jpeg">
+</div>
+<form action="/users/new" method="post">
+  <div class="container" style="background-color:#f7f3e1">
+    <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Submit</button>
+        <label>
+    <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f7f3e1">
+    <button type="button" class="cancelbtn">Cancel</button>
+        <span class="password">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</div>
+</html>
