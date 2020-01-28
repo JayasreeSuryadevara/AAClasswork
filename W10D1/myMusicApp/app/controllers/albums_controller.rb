@@ -8,14 +8,14 @@ class AlbumsController < ApplicationController
   def new
     @band = Band.find(params[:band_id])
     @album = Album.new(band_id: params[:band_id])
-    redirect_to band_url(@album.band_id)
+    render :new
   end
 
   def create
     @album = Album.new(album_params)
-
+    p album_params
     if @album.save
-      redirect_to album_url(@album)
+      redirect_to band_url(params[:band_id])
     else
       @band = @album.band
       flash.now[:errors] = @album.errors.full_messages
@@ -48,7 +48,7 @@ class AlbumsController < ApplicationController
   private
 
   def album_params
-    params.require(:album).permit(:band_id, :live, :name, :year)
+    params.require(:album).permit(:band_id, :live, :title, :year)
   end    
 
 end
