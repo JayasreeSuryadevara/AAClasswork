@@ -7,7 +7,4 @@ class Track < ApplicationRecord
         foreign_key: :album_id,
         class_name: :Album
 
-    belongs_to :band,
-        through: :album,
-        source: :band
 end
