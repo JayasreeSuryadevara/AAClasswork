@@ -1,5 +1,5 @@
 class Track < ApplicationRecord
-    validates :ord, uniqueness: ( scope: :album_id ) 
+    validates :ord, uniqueness: { scope: :album_id }
     validates :track_type, presence: true, inclusion: { in: ["regular","bonus"]}
 
     belongs_to :album,

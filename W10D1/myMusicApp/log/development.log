@@ -4847,3 +4847,145 @@ Migrating to ChangeIndexonAlbums (20200128000441)
   ↳ bin/rails:9
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ bin/rails:9
+Started GET "/bands" for ::1 at 2020-01-27 16:09:58 -0800
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jayasreesuryadevara/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (2.1ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 469ms (Views: 415.0ms | ActiveRecord: 21.8ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 16:10:02 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (1.9ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.7ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (75.0ms)
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 20.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for #<Album:0x00007fe32610da40>):
+     5: <% if @band.albums.length > 0 %>
+     6:   <ul class='main-list'>
+     7:   <% @band.albums.each do |album| %>
+     8:     <li><a href="<%= album_url(album) %>"><p><%= album.name %></p></a></li>
+     9:   <% end %>
+    10:   </ul>
+    11: <% else %>
+  
+app/views/bands/show.html.erb:8:in `block in _app_views_bands_show_html_erb___1667507034916283487_70306738419220'
+app/views/bands/show.html.erb:7:in `_app_views_bands_show_html_erb___1667507034916283487_70306738419220'
+app/controllers/bands_controller.rb:10:in `show'
+Started GET "/bands/1" for ::1 at 2020-01-27 16:11:01 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (0.5ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (4.1ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 130ms (Views: 122.6ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/bands/1/albums/new" for ::1 at 2020-01-27 16:11:08 -0800
+Processing by AlbumsController#new as HTML
+  Parameters: {"band_id"=>"1"}
+  [1m[36mBand Load (2.0ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:9
+  Rendering albums/new.html.erb within layouts/application
+  [1m[36mBand Load (0.7ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/albums/_form.html.erb:20
+  Rendered albums/_form.html.erb (5.4ms)
+  Rendered albums/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 102ms (Views: 94.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/albums" for ::1 at 2020-01-27 16:11:20 -0800
+Processing by AlbumsController#create as HTML
+  Parameters: {"authenticity_token"=>"nRyPWqQKuIm1o3AiQUMwO5leZcHdb+mDyyHiUamJZs3MW+i1rccloGnkeqbL0LOpEqFjgZ9gHefGlQ1/BA6+Fg==", "album"=>{"title"=>"Best Album", "band_id"=>"1", "live"=>"t", "year"=>"2018"}}
+  [1m[35m (16.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[36mBand Load (5.3ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[36mAlbum Create (4.7ms)[0m  [1m[32mINSERT INTO "albums" ("band_id", "title", "year", "live", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["band_id", 1], ["title", "Best Album"], ["year", 2018], ["live", true], ["created_at", "2020-01-28 00:11:20.696892"], ["updated_at", "2020-01-28 00:11:20.696892"]]
+  ↳ app/controllers/albums_controller.rb:17
+  [1m[35m (14.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/albums_controller.rb:17
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 41.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"bands", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/albums_controller.rb:18:in `create'
+Started GET "/bands" for ::1 at 2020-01-27 16:13:13 -0800
+Processing by BandsController#index as HTML
+  Rendering bands/index.html.erb within layouts/application
+  [1m[36mBand Load (1.6ms)[0m  [1m[34mSELECT "bands".* FROM "bands"[0m
+  ↳ app/views/bands/index.html.erb:4
+  Rendered bands/index.html.erb within layouts/application (44.5ms)
+Completed 200 OK in 146ms (Views: 114.6ms | ActiveRecord: 20.8ms)
+
+
+Started GET "/bands/1" for ::1 at 2020-01-27 16:13:17 -0800
+Processing by BandsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBand Load (3.5ms)[0m  [1m[34mSELECT  "bands".* FROM "bands" WHERE "bands"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bands_controller.rb:9
+  Rendering bands/show.html.erb within layouts/application
+  [1m[36mAlbum Load (0.6ms)[0m  [1m[34mSELECT "albums".* FROM "albums" WHERE "albums"."band_id" = $1[0m  [["band_id", 1]]
+  ↳ app/views/bands/show.html.erb:5
+  Rendered bands/show.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 144ms (Views: 113.3ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/albums/1" for ::1 at 2020-01-27 16:13:20 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (2.4ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:4
+  Rendering albums/show.html.erb within layouts/application
+  Rendered albums/show.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 2.4ms)
+
+
+  
+SyntaxError (/Users/jayasreesuryadevara/Desktop/AppAcademy/AAClasswork/W10D1/myMusicApp/app/models/track.rb:2: syntax error, unexpected tLABEL
+...ates :ord, uniqueness: ( scope: :album_id ) 
+...                         ^~~~~~):
+  
+app/models/track.rb:2: syntax error, unexpected tLABEL
+app/views/albums/show.html.erb:4:in `_app_views_albums_show_html_erb__4299686557777052086_70306751915580'
+app/controllers/albums_controller.rb:5:in `show'
+Started GET "/albums/1" for ::1 at 2020-01-27 16:14:09 -0800
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAlbum Load (0.5ms)[0m  [1m[34mSELECT  "albums".* FROM "albums" WHERE "albums"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/albums_controller.rb:4
+  Rendering albums/show.html.erb within layouts/application
+  Rendered albums/show.html.erb within layouts/application (36.4ms)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 23.9ms)
+
+
+  
+ActionView::Template::Error (Unknown key: :through. Valid keys are: :class_name, :anonymous_class, :foreign_key, :validate, :autosave, :foreign_type, :dependent, :primary_key, :inverse_of, :required, :polymorphic, :touch, :counter_cache, :optional, :default):
+    1: <h1>Music App</h1>
+    2: <h1 class='page-header'><%= @album.title %></h1>
+    3: 
+    4: <% if @album.tracks.length > 0 %>
+    5: <ul class='main-list'>
+    6:   <% @album.tracks.each do |track| %>
+    7:     <li><a href="<%= track_url(track) %>"><p><%= track.name %></p></a></li>
+  
+app/models/track.rb:10:in `<class:Track>'
+app/models/track.rb:1:in `<top (required)>'
+app/views/albums/show.html.erb:4:in `_app_views_albums_show_html_erb__4299686557777052086_70306779513000'
+app/controllers/albums_controller.rb:5:in `show'

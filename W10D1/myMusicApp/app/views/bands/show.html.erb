@@ -5,7 +5,7 @@
 <% if @band.albums.length > 0 %>
   <ul class='main-list'>
   <% @band.albums.each do |album| %>
-    <li><a href="<%= album_url(album) %>"><p><%= album.name %></p></a></li>
+    <li><a href="<%= album_url(album) %>"><p><%= album.title %></p></a></li>
   <% end %>
   </ul>
 <% else %>
