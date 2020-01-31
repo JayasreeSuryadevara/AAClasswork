@@ -1,0 +1,19 @@
+<% action_url = user.persisted? ? edit_user_url(user.id) : new_user_url %>
+<% html_method = user.persisted? ? "PATCH" : "POST" %>
+<% process_label = user.persisted? ? "Submit!" : "Sign up!" %>
+
+<form action="<%= action_url %>" method=<%= html_method %> >
+
+<input type ="hidden" 
+      name="authenticity_token" 
+      value="<%= form_authenticity_token %>">
+
+<label for="username"> Username </label>
+<input type="text" id="username" name="user[username]">
+
+<label for="pw"> Password </label>
+<input type="password" id="pw" name="user[password]">
+
+<input type="submit" value=<%= process_label %> >
+
+</form>
