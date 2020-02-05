@@ -1,3 +1,5 @@
+require 'byebug'
+
 class Route
   attr_reader :pattern, :http_method, :controller_class, :action_name
 
@@ -6,6 +8,7 @@ class Route
     @http_method = http_method
     @controller_class = controller_class 
     @action_name = action_name
+    # debugger
   end
 
   # checks if pattern matches path and method matches request method
@@ -29,10 +32,12 @@ class Route
   # use pattern to pull out route params (save for later?)
   # instantiate controller and call controller action
   def run(req, res)
+    p "enter run method"
     # p @pattern
-    # p req.path
+    #  p req.path
     match_data = @pattern.match(req.path)
-    # p matched_route[:foo]
+    # p match_data
+    # p req
     # match_data.names & match_data.captures
     route_params = Hash[match_data.names.zip(match_data.captures)]
     controller = @controller_class.new(req, res, route_params)

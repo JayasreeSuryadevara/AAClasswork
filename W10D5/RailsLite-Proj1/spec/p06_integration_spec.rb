@@ -1,11 +1,12 @@
 require 'rack'
 require 'controller_base'
 require 'router'
+require 'byebug'
 
 describe 'the symphony of things' do
   let(:req) { Rack::Request.new({'rack.input' => ''}) }
   let(:res) { Rack::MockResponse.new('200', [], {}) }
-
+debugger
   before(:all) do
     class Ctrlr < ControllerBase
       def route_render

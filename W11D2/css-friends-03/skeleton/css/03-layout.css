@@ -1,0 +1,17 @@
+/* PHASE 3: Layout */
+
+.content .content-sidebar .content-main {
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    min-height: 200px;
+
+}
+.content-sidebar {
+    position: absolute;
+    background-color: blue;
+}
+.content-main {
+    background-color: crimson;
+    position: relative;
+}

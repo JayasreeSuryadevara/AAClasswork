@@ -26,7 +26,7 @@ class ControllerBase
       res.location = url
       res.status = 302
       @already_built_response = true
-      @session.store_session(res)
+      self.session.store_session(res)
     else
       raise "double render error" 
     end
@@ -40,7 +40,7 @@ class ControllerBase
       res['Content-Type'] = content_type
       res.write(content)
       @already_built_response = true
-      @session.store_session(res)
+      self.session.store_session(res)
     else
       raise "double render error" 
     end
@@ -67,7 +67,7 @@ class ControllerBase
 
   # use this with the router to call action_name (:index, :show, :create...)
   def invoke_action(name)
-    p name
+    # p name
     self.send(name)
   end
 end

@@ -8,7 +8,7 @@ class Session
     # p cookie
     if cookie
       @data = JSON.parse(cookie)
-      p @data
+      # p @data
       # p session[:pho]
     else
       @data = {}
