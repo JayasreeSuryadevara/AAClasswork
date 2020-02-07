@@ -1,0 +1,8 @@
+/* PHASE 6: Sidebar */
+.profile-picture {
+  display: block;
+  min-height: 200px;
+  background-image: url("../images/cat.jpg");
+  background-size: cover;
+}
+
