@@ -1,67 +1,47 @@
-Array.prototype.myEach = function (cb) {
-  for (let i = 0; i < this.length; i++) {
-    cb(this[i]) ;
-  };
-};
+Array.prototype.myEach = function (callback) {
+  for(let i = 0; i < this.length; i++ ){
+    callback(this[i]);
+  }
+}
 
-function cb(el) {
-  return el = el * 2;
-  console.log(el);
-};
-
-// a =[1, 2, 3, 4, 5]
-//  a.myEach(cb)
-// 1
-// 2
-// 3
-// 4
-// 5
-// undefined
-
-
-Array.prototype.myMap = function(cb) {
-    const resultsArray = [];
-    
-    const callBack = function(el) {
-      resultsArray.push(cb(el));
-    };
-
-    this.myEach(callBack);
-
-    return resultsArray;
-};
-
-// a = [1, 2, 3, 4, 5];
-
-// function cb(el) {
-//   return el = el * 2;
+// a = [1, 2, 3, 4, 5]; 
+// a.myEach((el) => { 
+//   el *= 2;
 //   console.log(el);
-// };
+//  });
 
+Array.prototype.myMap = function (callback) {
+  resultArr = []
+  this.myEach(el => resultArr.push(callback(el)));
+  return resultArr;
+}
 
-// a.myMap(cb);
-// 2
-// 4
-// 6
-// 8
-// 10
+// a = [1, 2, 3, 4, 5]; 
+// a.myEach((el) => { 
+//   el *= 2;
+//   console.log(el);
+//  });
 
-Array.prototype.myReduce = function (callBackFunc, initialValue) {
-  let currentArray= this;
-  if (initialValue === undefined){
-    initialValue = currentArray[0];
-    currentArray = currentArray.slice(1);
+Array.prototype.myReduce = function (callback, initialValue) {
+  arr = this;
+  if (!initialValue){
+    initialValue = arr[0];
+    arr.slice(1);
   };
-  let result = initialValue;
-  currentArray.myEach(el => result = callBackFunc(el, result));
-  return result;
-};
+  for( let i = 0; i < arr.length; i++ ){
+    initialValue = callback(initialValue, arr[i]);
+  }
+  return initialValue;
+}
 
-// [1, 2, 3].myReduce(function (acc, el) {
+// // without initialValue
+// a = [1, 2, 3].myReduce(function (acc, el) {
 //   return acc + el;
 // });
-// 6
-// [1, 2, 3].myReduce(function (acc, el) {
+// console.log(a);
+
+// // with initialValue
+// b = [1,2,3].myReduce(function (acc, el) {
 //   return acc + el;
 // }, 25);
-// 31
+// console.log(b);

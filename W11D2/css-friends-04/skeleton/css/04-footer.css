@@ -1,0 +1,23 @@
+/* PHASE 4: Footer */
+.content-footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    background-color: whitesmoke;
+    color: lightslategray;
+    font-size: 14px;
+    justify-content: space-between;
+}
+.copyright {
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.footer-links{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
