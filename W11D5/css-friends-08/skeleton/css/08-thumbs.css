@@ -1,0 +1,17 @@
+/* PHASE 8: Thumbs */
+.profile-pictures{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-pictures > li {
+    width: 28%;
+    height: 60px;
+    padding: 2%;
+    border-radius: 5px;
+}
+/* li:before{
+    position: absolute;
+    display:block;
+}
+
+li:nth-child(3){} */
