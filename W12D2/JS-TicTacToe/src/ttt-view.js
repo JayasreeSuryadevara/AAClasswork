@@ -18,6 +18,7 @@ class View {
   makeMove($square) {
     const pos = $square.data("pos");
     const currentPlayer = this.game.currentPlayer;
+    
     let $li = $("<li>${`currentPlayer`}</li>");
     this.game.playMove(pos);
   }
