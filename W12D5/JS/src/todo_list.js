@@ -19,7 +19,7 @@ function addTodo(event) {
 
 function checkboxHandler(event) {
   const todos = JSON.parse(localStorage.getItem("todos"))
-
+// debugger;
   const todo = todos.filter((el) => el.id === parseInt(event.target.dataset.id))[0]
   
   todo.done = event.target.checked;
