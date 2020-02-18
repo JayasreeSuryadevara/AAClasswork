@@ -1,0 +1,28 @@
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 120px;
+    margin: auto;
+    /* height: 200px; */
+}
+
+.tile {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    border-style: outset;
+    background-color: rgb(214, 207, 207);
+    justify-content: center;
+}
+
+.flagged {
+
+}
+
+.bombed {
+
+}
+
+.revealed {
+    
+}
