@@ -4,6 +4,8 @@
     background-color: orange;
     font-size: 20px;
     width: 300px;
+    padding: 20px;
+    border: solid black 5px;
 }
 
 #time-list1 {
