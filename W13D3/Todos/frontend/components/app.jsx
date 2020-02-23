@@ -1,21 +1,15 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 import TodoListContainer from './todos/todo_list_container';
 
-class App extends React.Component {
-    constructor(props){
-        super(props);
-        this.state = {};
-    }
-    render(){
-        // debugger;
-        return (
-            <div>
-                <h1>Todos: </h1>
-                <TodoListContainer />
-            </div>
-        );
-    }
 
-}
+const App = ({ store }) => (
+    <Provider store={store}>
+        <div>
+            <h1>Todos:</h1>
+            <TodoListContainer />  
+        </div>
+    </Provider>
+);
 
 export default App;

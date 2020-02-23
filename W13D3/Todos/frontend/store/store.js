@@ -6,7 +6,3 @@ const configureStore = () => {
 }
 
 export default configureStore;
-
-//store.dispatch({ action, body })
-
-//store.getState

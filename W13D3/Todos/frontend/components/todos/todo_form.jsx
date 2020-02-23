@@ -6,17 +6,23 @@ class TodoForm extends React.Component{
         super(props);
         this.state = {};
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.clearTodos = this.clearTodos.bind(this);
     }
 
     handleSubmit (e) {
         e.preventDefault();
-        const todo = Object.assign({}, this.state, {id: uniqueId()});
+        const newId = uniqueId();
+        console.log(newId);
+        const todo = Object.assign({}, this.state, { id: newId });
         this.props.receiveTodo(todo);
-        
+    }
+
+    clearTodos () {
+    
     }
 
     update (property) {
-        return e => this.setState({ [property]: e.target.value });//[id]:
+        return e => this.setState({ [property]: e.target.value });
     }
 
     render() {
@@ -37,6 +43,8 @@ class TodoForm extends React.Component{
                     />
                 </label>
                 <button className="create-button">Create Todo</button>
+                <br/>
+                <button className="clear-todos" onClick={this.clearTodos()}>Clear All Todos!</button>
             </form>
         );
     }
