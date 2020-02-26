@@ -1,0 +1,87 @@
+{
+    users: {
+        1: {
+            username: "Jaya",
+            password_digest: "...",
+            session_token: "...",
+            email: "jaya@test.com",
+            address: "99 Street Name, City, CA 99999",
+        },
+        2: {
+            username: "Shopper1",
+            password_digest: "...",
+            session_token: "...",
+            email: "shopper1@test.com",
+            address: "99 Street Name, City, NY 99999",
+        }
+    },
+    vendors: {
+        1: {
+            vendor_name: "Crafty Jewllery",
+            owner_id: 1
+        }
+    },
+    products: {
+        1: {
+            product_name: "CJRedStoneEarrings",
+            price: 24.99,
+            short_desc: "Garnet Birthstone Earrings",
+            long_desc: "Garnet Birthstone Jewellery",
+            vendor_id: 1,
+            category: "Jewellery",
+            type: "Earrings",
+            color_tag: "Red"
+        },
+        2: {
+            product_name: "CJGoldEarrings",
+            price: 34.99,
+            short_desc: "Gold Earrings",
+            long_desc: "Simple Gold Hoop Earrings",
+            vendor_id: 1,
+            category: "Jewellery",
+            type: "Earrings",
+            color_tag: "Gold"
+        }
+    },
+    reviews: {
+        1: {
+            user_id: 2,
+            product_id: 2,
+            rating: 5,
+            body: "Elegant and soft texture"
+        },
+        2: {
+            user_id: 2,
+            product_id: 1,
+            rating: 4,
+            body: "Lovely color of the Garnet" 
+        }
+    },
+    shopping_carts: {
+        201: {
+            user_id: 2,
+            transaction_id: 2
+        }
+    },
+    cart_items: {
+        2011: {
+            product_id: 2,
+            user_id: 2,
+            quantity: 1,
+            cart_id: 201
+        },
+        2012: {
+            product_id: 1,
+            user_id: 2,
+            quantity: 1,
+            cart_id: 201           
+        }
+    },
+    transactions: {
+        2: {
+            cart_id: 201,
+            user_id: 2,
+            amount: 64.98
+        }
+    }
+}
