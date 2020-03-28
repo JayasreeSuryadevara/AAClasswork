@@ -1,0 +1,31 @@
+{
+  "name": "online-store-part-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server:dev": "nodemon --inspect index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "fakergem": "^2.1.0",
+    "graphql": "^14.6.0",
+    "graphql-tools": "^4.0.7",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.9.6",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "graphql-playground-middleware-express": "^1.7.12",
+    "nodemon": "^2.0.2"
+  }
+}
