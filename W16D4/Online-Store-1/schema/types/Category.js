@@ -16,7 +16,8 @@ const typeDefs = `
 
 const resolvers = {
   Query: {
-    categories(_, __) {
+    categories(_, __, context) {
+      console.log(context.user);
       return Category.find({});
     }
   },
