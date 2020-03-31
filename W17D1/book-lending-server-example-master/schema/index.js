@@ -33,6 +33,7 @@ const typeDefs = `
     borrowBooks(bookIds: [ID]!): BookUpdateResponse!
     returnBook(bookId: ID!): BookUpdateResponse!
     login(username: String!, password: String!): UserCredentials
+    signup(username: String!, password: String!): UserCredentials
   }
   type BookUpdateResponse {
     success: Boolean!
@@ -89,6 +90,9 @@ const resolvers = {
     login(_, { username, password }) {
       // login method used in MERN project
       return User.login(username, password);
+    },
+    signup(_, {username, password}) {
+      return User.signup(username, password);
     }
   },
   User: {
