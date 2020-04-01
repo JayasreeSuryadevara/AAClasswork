@@ -7,8 +7,8 @@ import AuthorShow from './pages/AuthorShow';
 import ErrorPage from './pages/ErrorPage';
 import NavBar from './components/navbar/NavBar';
 import UserProfile from './pages/UserProfile';
-import LoginUser from './pages/LoginUser';
-import SignupUser from './pages/SignupUser';
+import LoginForm from './pages/LoginForm';
+import SignupForm from './pages/SignupForm';
 import ProtectedRoute from './components/util/ProtectedRoute';
 import AuthRoute from './components/util/AuthRoute';
 import './App.css';
@@ -19,8 +19,8 @@ export default () => {
       <NavBar />
       <Switch>
         <Route exact path="/" component={BookIndex} />
-        <AuthRoute exact path="/login" component={LoginUser} />
-        <AuthRoute exact path="/signup" component={SignupUser}/>
+        <AuthRoute exact path="/login" component={LoginForm} />
+        <AuthRoute exact path="/signup" component={SignupForm}/>
         <ProtectedRoute exact path="/me" component={UserProfile} />
         <Route exact path="/books/:bookId" component={BookShow} />
         <Route exact path="/authors" component={AuthorIndex} />

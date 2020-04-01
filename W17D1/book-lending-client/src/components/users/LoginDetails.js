@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useMutation } from '@apollo/react-hooks';
-import {IS_LOGGED_IN, CURRENT_USER} from '../../graphql/queries';
+import { Link } from 'react-router-dom';
+// import {IS_LOGGED_IN, CURRENT_USER} from '../../graphql/queries';
 import { LOGIN_USER } from '../../graphql/mutation';
+import './UserDetails.css';
 
 
 export default () => {
@@ -10,7 +12,7 @@ export default () => {
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
 
-    const [login, {loading, error}] = useMutation(
+    const [login] = useMutation(
         LOGIN_USER,
         {
             variables: {
@@ -22,19 +24,19 @@ export default () => {
                     setErrorMessage("Invalid credentials");
                 }else{
                     // we can either write to the cache directly or refetch the IS_LOGGED_IN query so other components will update properly
-                    // cache.writeData({ data: { isLoggedIn: login.loggedIn, me: { _id: login._id, username: login.username } }});
+                    cache.writeData({ data: { isLoggedIn: login.loggedIn, me: { _id: login._id, username: login.username } }});
                     localStorage.setItem('token', login.token);
                 }
             },
             onError() { 
                 setErrorMessage("Login unsuccessful");
             },
-            refetchQueries: [{ query: IS_LOGGED_IN }, { query: CURRENT_USER }]
+            // refetchQueries: [{ query: IS_LOGGED_IN }, { query: CURRENT_USER }]
             }
     )
 
     return (
-        <> 
+        <div className="login-profile"> 
         {errorMessage}
         <form onSubmit={(e) => {
             e.preventDefault();
@@ -48,7 +50,11 @@ export default () => {
             </label>
             <input type="submit" value="Login" />
         </form>
-        </>
+        <br />
+        <p> Or </p>
+        <br />
+        <Link to={"/signup"}> Sign Up </Link>
+        </div>
     );
 
 }

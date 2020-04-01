@@ -12,11 +12,8 @@ export default () => {
             <Link to={`/authors`}>
                 Authors
             </Link>
-            <Link to={"/login"}>
-                Login
-            </Link>
-            <Link to={"/signup"}>
-                SignUp
+            <Link to={"/me"}>
+                Profile
             </Link>
         </div>
     );

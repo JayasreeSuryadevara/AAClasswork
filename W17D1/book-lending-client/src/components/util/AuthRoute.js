@@ -1,23 +1,23 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
-import { IS_LOGGED_IN } from '../../graphql/queries';
 import { useQuery } from '@apollo/react-hooks';
-import BookIndex from '../../pages/BookIndex';
+import { IS_LOGGED_IN } from '../../graphql/queries';
 
-export default ({ path, component: Component, exact }) => {
+export default ({
+    component: Component,
+    path,
+    exact,
+    redirectTo
+}) => {
     const { data, loading, error } = useQuery(IS_LOGGED_IN);
-    if (!data || loading || error) {
-        return null;
-    }
-    const userIsLogged = data.isLoggedIn;
 
-    if (userIsLogged) {
-        return (
-            <Redirect to="/" component={BookIndex} />
-            )
+    if (!redirectTo) redirectTo = "/";
+
+    if (loading || error || !data) {
+        return null;
+    } else if (!data.isLoggedIn) {
+        return <Route path={path} component={Component} exact={exact} />;
     } else {
-        return (
-        <Route exact={exact} path={path} component={Component} />
-        )   
+        return <Route path={path} render={() => <Redirect to={redirectTo} />} />;
     }
 };

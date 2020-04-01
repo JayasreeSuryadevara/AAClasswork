@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {useMutation} from '@apollo/react-hooks';
-import { IS_LOGGED_IN, CURRENT_USER } from '../../graphql/queries';
+// import { IS_LOGGED_IN, CURRENT_USER } from '../../graphql/queries';
 import { SIGNUP_USER } from '../../graphql/mutation';
+import { Link } from 'react-router-dom';
 
 
 export default () => {
@@ -10,7 +11,7 @@ export default () => {
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
 
-    const [signup, { loading, error }] = useMutation(
+    const [signup] = useMutation(
         SIGNUP_USER,
         {
             variables: {
@@ -22,19 +23,19 @@ export default () => {
                     setErrorMessage("Invalid username or password");
                 } else {
                     // we can either write to the cache directly or refetch the IS_LOGGED_IN query so other components will update properly
-                    // cache.writeData({ data: { isLoggedIn: login.loggedIn, me: { _id: login._id, username: login.username } }});
+                    cache.writeData({ data: { isLoggedIn: signup.loggedIn, me: { _id: signup._id, username: signup.username } }});
                     localStorage.setItem('token', signup.token);
                 }
             },
             onError() {
                 setErrorMessage("Signup unsuccessful");
             },
-            refetchQueries: [{ query: IS_LOGGED_IN }, { query: CURRENT_USER }]
+            // refetchQueries: [{ query: IS_LOGGED_IN }, { query: CURRENT_USER }]
         }
     )
 
     return (
-        <>
+        <div className="signup-profile">
             {errorMessage}
             <form onSubmit={(e) => {
                 e.preventDefault();
@@ -48,7 +49,11 @@ export default () => {
                 </label>
                 <input type="submit" value="SignUp" />
             </form>
-        </>
+            <br />
+            <p> Or </p>
+            <br />
+            <Link to={"/login"}> Log In </Link>
+        </div>
     );
 
 }

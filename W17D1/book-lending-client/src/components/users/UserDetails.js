@@ -14,15 +14,15 @@ export default () => {
 
 
     return (
-        <>
+        <div className="user-profile">
             <h1>Welcome: {user.username}</h1>
             <p>Borrowed books</p>
             <ul>
                 {user.books && user.books.map(book => 
                     <li key={book._id}><Link to={`/books/${book._id}`}>{book.title}</Link></li>
-                    )}
+                )}
             </ul>
-        </>
+        </div>
     )
 
 }
