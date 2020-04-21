@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import { LOGIN_USER } from '../../graphql/mutation';
 import './UserDetails.css';
 
-
 export default () => {
 
     const [username, setUsername] = useState("");

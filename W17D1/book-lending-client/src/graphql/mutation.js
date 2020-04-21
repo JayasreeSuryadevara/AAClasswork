@@ -21,3 +21,30 @@ export const SIGNUP_USER = gql `
         }
     }
 `
+
+export const BORROW_BOOK = gql `
+    mutation BorrowBook($bookId: ID!) {
+        borrowBooks(bookIds: [$bookId]) {
+            success
+            message
+            books {
+                _id
+                title
+                isBooked
+            }
+        }
+    }
+`
+export const RETURN_BOOK = gql `
+    mutation ReturnBook($bookId: ID!) {
+        returnBook(bookId: $bookId) {
+            success
+            message
+            books {
+                _id
+                title
+                isBooked
+            }
+        }
+    }
+`

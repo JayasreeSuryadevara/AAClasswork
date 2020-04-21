@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {useQuery} from '@apollo/react-hooks';
 import {CURRENT_USER} from '../../graphql/queries';
+import ReturnBookButton from '../../components/books/ReturnBookButton';
 
 export default () => {
     const {data, loading, error}  = useQuery(CURRENT_USER);
@@ -19,7 +20,10 @@ export default () => {
             <p>Borrowed books</p>
             <ul>
                 {user.books && user.books.map(book => 
-                    <li key={book._id}><Link to={`/books/${book._id}`}>{book.title}</Link></li>
+                    <li key={book._id}>
+                        <Link to={`/books/${book._id}`}>{book.title}</Link>
+                        <ReturnBookButton book={book}/>
+                    </li>
                 )}
             </ul>
         </div>
