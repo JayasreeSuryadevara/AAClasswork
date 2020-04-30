@@ -61,10 +61,24 @@
 // Let's code!
 // -----------
 function reverseLinkedList(linkedList) {
-  // TODO: Implement the reverseLinkedList function!
+  // TODO: Implement the reverseLinkedList function! 
+  // [3] [5] => [5][3]
+  if (linkedList.length <= 1) return linkedList;
+  let prevHead = this.head;
+  let prev = this.head; //[3]
+  // let ;//[5]
+  while (current = prev.next){
+    let next = current.next; //null
+    current.next = prev; //[5][3]
+    prev = current;
+    current = next;//null
+    next = current.next;
+  }
 
+  this.tail = prevHead;
+  this.tail.next = null;
+  return this;
 }
-
 // ----------------------------------------
 // Given: Singly Linked List - Do Not Edit!
 // ----------------------------------------
