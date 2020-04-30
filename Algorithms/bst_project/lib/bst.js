@@ -47,17 +47,12 @@ class BST {
    }
 
    searchIter(val){
-       if (!this.root) return false;
-        let currentNode = this.root;
-        if (currentNode.val === val) return true;
+    let currentNode = this.root;
 
        while (currentNode) {
         if (val < currentNode.val ){
-            console.log("less than cur");
             currentNode = currentNode.left;
-            console.log("currentNode", currentNode);
         } else if (val > currentNode.val) {
-            console.log("more than cur");
             currentNode = currentNode.right;
         } else {
             return true;
