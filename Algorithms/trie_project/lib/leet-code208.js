@@ -15,18 +15,30 @@
 // You may assume that all inputs are consist of lowercase letters a - z.
 // All inputs are guaranteed to be non - empty strings.
 
+class Node {
+  constructor() {
+    this.children = {};
+    this.isTerminal = false;
+  }
+}
 // Initialize your data structure here.
 var Trie = function () {
-
+  this.root = new Node();
 };
-
 // /**
 //  * Inserts a word into the trie. 
 //  * @param {string} word
 //  * @return {void}
 //  */
-Trie.prototype.insert = function (word) {
+Trie.prototype.insert = function (word, root=this.root) {
+  for (let i = 0; i < word.length; i++) {
+    let letter = word[i];
 
+    if (!(letter in root.children)) root.children[letter] = new Node();
+
+    root = root.children[letter];
+  }
+  root.isTerminal = true;
 };
 
 // /**
@@ -34,8 +46,15 @@ Trie.prototype.insert = function (word) {
 //  * @param {string} word
 //  * @return {boolean}
 //  */
-Trie.prototype.search = function (word) {
+Trie.prototype.search = function (word, root = this.root){
+  for (let i = 0; i < word.length; i++) {
+    let letter = word[i];
 
+    if (!(letter in root.children)) return false;
+
+    root = root.children[letter];
+  }
+  return root.isTerminal;
 };
 
 // /**
@@ -43,8 +62,14 @@ Trie.prototype.search = function (word) {
 //  * @param {string} prefix
 //  * @return {boolean}
 //  */
-Trie.prototype.startsWith = function (prefix) {
-
+Trie.prototype.startsWith = function (prefix, root = this.root){
+  if (prefix.length === 0) return true;
+  let fLetter = prefix[0];
+  if (fLetter in root.children) {
+    return this.startsWith(prefix.slice(1), root.children[fLetter]);
+  } else {
+    return false;
+  }
 };
 
 // /**
